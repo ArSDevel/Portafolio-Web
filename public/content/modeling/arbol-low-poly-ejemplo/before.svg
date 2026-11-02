@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs><pattern id="g" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="2"/></pattern></defs>
+  <rect width="1280" height="720" fill="#22202c"/><rect width="1280" height="720" fill="url(#g)"/>
+  <g transform="translate(640 300)" stroke="#0b0a10" stroke-width="10" stroke-linejoin="round">
+    <path d="M0-120 104-60V60L0 120-104 60V-60Z" fill="#a49fb6"/>
+    <path d="M0-120 104-60 0 0-104-60Z" fill="#fff" opacity=".55"/><path d="M0 0V120" />
+  </g>
+  <text x="640" y="520" text-anchor="middle" font-family="monospace" font-size="54" font-weight="700" fill="#f2efe6">Blockout</text>
+  <text x="640" y="580" text-anchor="middle" font-family="monospace" font-size="30" fill="#a49fb6">antes</text>
+</svg>

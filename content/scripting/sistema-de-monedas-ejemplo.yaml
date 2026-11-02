@@ -1,0 +1,118 @@
+title: Sistema de monedas (Ejemplo)
+titleEn: Coin system (Example)
+summary:
+  es: Monedas con leaderstats, guardado de datos y UI animada.
+  en: Coins with leaderstats, data saving and an animated UI.
+description:
+  es: |-
+    Proyecto de ejemplo para probar el portafolio. Reemplázalo o bórralo desde el panel.
+
+    El servidor es la única fuente de verdad: el cliente nunca modifica monedas, solo las muestra. La configuración vive en un ModuleScript compartido para que servidor y cliente usen los mismos valores.
+  en: |-
+    Sample project to test the portfolio. Replace or delete it from the panel.
+
+    The server is the single source of truth: the client never changes coins, it only displays them. Configuration lives in a shared ModuleScript so server and client use the same values.
+cover: /content/scripting/sistema-de-monedas-ejemplo/cover.svg
+gallery:
+  - image: /content/scripting/sistema-de-monedas-ejemplo/gallery/0/image.svg
+    caption:
+      es: UI de monedas
+      en: Coin UI
+tags:
+  - Luau
+  - DataStore
+  - Cliente / Servidor
+date: 2026-10-28
+featured: true
+scripts:
+  - name: CoinConfig
+    kind: ModuleScript
+    location: ReplicatedStorage
+    code: |-
+      --!strict
+      -- Shared settings used by both server and client.
+      local CoinConfig = {
+      	STARTING_COINS = 50,
+      	REWARD_PER_PICKUP = 10,
+      	SAVE_INTERVAL = 60, -- seconds
+      }
+
+      export type PlayerData = {
+      	coins: number,
+      }
+
+      return table.freeze(CoinConfig)
+    highlight: '4-6'
+  - name: CoinService
+    kind: Script
+    location: ServerScriptService
+    code: |-
+      --!strict
+      local Players = game:GetService("Players")
+      local DataStoreService = game:GetService("DataStoreService")
+      local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+      local CoinConfig = require(ReplicatedStorage.CoinConfig)
+      local store = DataStoreService:GetDataStore("Coins_v1")
+
+      local function load(player: Player): number
+      	local ok, saved = pcall(store.GetAsync, store, player.UserId)
+      	if ok and typeof(saved) == "number" then
+      		return saved
+      	end
+      	return CoinConfig.STARTING_COINS
+      end
+
+      local function onPlayerAdded(player: Player)
+      	local leaderstats = Instance.new("Folder")
+      	leaderstats.Name = "leaderstats"
+
+      	local coins = Instance.new("IntValue")
+      	coins.Name = "Coins"
+      	coins.Value = load(player)
+      	coins.Parent = leaderstats
+
+      	leaderstats.Parent = player
+      end
+
+      local function save(player: Player)
+      	local leaderstats = player:FindFirstChild("leaderstats")
+      	local coins = leaderstats and leaderstats:FindFirstChild("Coins") :: IntValue?
+      	if coins then
+      		pcall(store.SetAsync, store, player.UserId, coins.Value)
+      	end
+      end
+
+      Players.PlayerAdded:Connect(onPlayerAdded)
+      Players.PlayerRemoving:Connect(save)
+      game:BindToClose(function()
+      	for _, player in Players:GetPlayers() do
+      		save(player)
+      	end
+      end)
+    highlight: '9-15, 39-43'
+  - name: CoinDisplay
+    kind: LocalScript
+    location: StarterPlayerScripts
+    code: |-
+      --!strict
+      local Players = game:GetService("Players")
+      local TweenService = game:GetService("TweenService")
+
+      local player = Players.LocalPlayer
+      local gui = player:WaitForChild("PlayerGui"):WaitForChild("CoinGui")
+      local label = gui.Frame.Amount :: TextLabel
+
+      local coins = player:WaitForChild("leaderstats"):WaitForChild("Coins") :: IntValue
+      local pop = TweenInfo.new(0.15, Enum.EasingStyle.Back, Enum.EasingDirection.Out, 0, true)
+
+      local function render()
+      	label.Text = tostring(coins.Value)
+      	TweenService:Create(label, pop, { TextSize = 34 }):Play()
+      end
+
+      coins.Changed:Connect(render)
+      render()
+    highlight: ''
+repoUrl: null
+video: null

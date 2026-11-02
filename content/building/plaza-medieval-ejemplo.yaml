@@ -1,0 +1,33 @@
+title: Plaza medieval (Ejemplo)
+titleEn: Medieval plaza (Example)
+summary:
+  es: Plaza central de un pueblo medieval para un RPG.
+  en: Central plaza of a medieval town for an RPG.
+description:
+  es: |-
+    Proyecto de ejemplo para probar el portafolio. Reemplázalo o bórralo desde el panel.
+
+    Plaza diseñada alrededor del recorrido del jugador: entradas claras, puntos de interés visibles y una iluminación que guía hacia la misión principal.
+  en: |-
+    Sample project to test the portfolio. Replace or delete it from the panel.
+
+    A plaza designed around player flow: clear entrances, visible points of interest and lighting that guides toward the main quest.
+cover: /content/building/plaza-medieval-ejemplo/cover.svg
+gallery:
+  - image: /content/building/plaza-medieval-ejemplo/gallery/0/image.svg
+    caption:
+      es: Vista aérea
+      en: Aerial view
+  - image: /content/building/plaza-medieval-ejemplo/gallery/1/image.svg
+    caption:
+      es: Iluminación nocturna
+      en: Night lighting
+tags:
+  - Roblox Studio
+  - Medieval
+  - Iluminación
+date: 2026-10-10
+featured: true
+placeId: ''
+experienceUrl: null
+video: null

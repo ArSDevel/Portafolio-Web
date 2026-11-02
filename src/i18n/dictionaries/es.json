@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Ath — Modelador 3D, Builder y Scripter en Roblox",
+    "description": "Portafolio de Ath (@HolandaMexico): modelado 3D, building y scripting en Luau para experiencias de Roblox."
+  },
+  "nav": {
+    "modeling": "modelado",
+    "building": "building",
+    "scripting": "scripting",
+    "about": "sobre-mí",
+    "contact": "contacto",
+    "switchLocale": "EN",
+    "menu": "Menú"
+  },
+  "hero": {
+    "badge": "Creando en Roblox Studio",
+    "available": "Disponible para proyectos",
+    "hello": "Hola, soy",
+    "roles": ["Modelador 3D", "Builder", "Scripter en Luau"],
+    "intro": "Creo modelos, mapas y sistemas para experiencias de Roblox: optimizados, limpios y listos para jugar.",
+    "ctaPrimary": "Ver mi trabajo",
+    "ctaSecondary": "Contactar",
+    "outputLabel": "Output",
+    "facts": [
+      { "label": "modelado", "value": "Blender" },
+      { "label": "building", "value": "Roblox Studio" },
+      { "label": "lenguaje", "value": "Luau" }
+    ]
+  },
+  "areas": {
+    "kicker": "lo que hago",
+    "title": "Áreas de trabajo",
+    "subtitle": "Tres disciplinas que se combinan para llevar una idea desde el boceto hasta una experiencia jugable.",
+    "explore": "Ver proyectos",
+    "projects": "proyectos",
+    "items": {
+      "modeling": {
+        "title": "Modelado 3D",
+        "description": "Modelos low-poly optimizados en Blender, con topología limpia y texturas ligeras para móvil.",
+        "tags": ["Blender", "Low-poly", "UV / Texturas"]
+      },
+      "building": {
+        "title": "Building",
+        "description": "Mapas y escenas construidos en Roblox Studio, pensados para el recorrido del jugador y el rendimiento.",
+        "tags": ["Roblox Studio", "Mapas", "Iluminación"]
+      },
+      "scripting": {
+        "title": "Scripting",
+        "description": "Sistemas de juego en Luau con código modular y tipado, separado entre servidor y cliente.",
+        "tags": ["Luau", "ModuleScripts", "Cliente / Servidor"]
+      }
+    }
+  },
+  "featured": {
+    "kicker": "destacados",
+    "title": "Proyectos destacados",
+    "subtitle": "Una selección de mis trabajos más recientes."
+  },
+  "stack": {
+    "kicker": "herramientas",
+    "title": "Stack",
+    "subtitle": "El software con el que trabajo día a día."
+  },
+  "process": {
+    "kicker": "cómo trabajo",
+    "title": "Proceso",
+    "subtitle": "Un flujo de trabajo claro, del primer bloque a la publicación.",
+    "steps": [
+      { "title": "Referencias", "description": "Defino el estilo, la escala y lo que necesita el proyecto." },
+      { "title": "Blockout", "description": "Formas básicas para validar proporciones y recorrido." },
+      { "title": "Modelado", "description": "Detalle en Blender cuidando el número de polígonos." },
+      { "title": "Integración", "description": "Importo a Studio, armo el mapa y conecto los scripts." },
+      { "title": "Pruebas", "description": "Reviso rendimiento y errores antes de entregar." }
+    ]
+  },
+  "listing": {
+    "kicker": "proyectos",
+    "empty": "Todavía no hay proyectos aquí. ¡Pronto!",
+    "subtitles": {
+      "modeling": "Modelos 3D hechos en Blender. Abre cualquiera para girarlo en 3D y ver su ficha técnica.",
+      "building": "Mapas y escenas construidos en Roblox Studio.",
+      "scripting": "Sistemas en Luau con el código completo, coloreado como en Studio."
+    }
+  },
+  "project": {
+    "back": "Volver",
+    "description": "descripción",
+    "gallery": "galería",
+    "code": "código",
+    "video": "video",
+    "model": "modelo 3d",
+    "compare": "antes / después",
+    "experience": "experiencia",
+    "repo": "Ver repositorio",
+    "openExperience": "Abrir experiencia",
+    "close": "Cerrar"
+  },
+  "explorer": {
+    "explorer": "Explorer",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "lines": "líneas"
+  },
+  "viewer": {
+    "title": "Visor 3D",
+    "wireframe": "Wireframe",
+    "rotate": "Rotar",
+    "reset": "Centrar",
+    "hint": "Arrastra para girar · rueda para zoom · clic derecho para mover",
+    "properties": "Properties",
+    "triangles": "Triángulos",
+    "vertices": "Vértices",
+    "meshes": "Mallas",
+    "materials": "Materiales",
+    "textures": "Texturas",
+    "software": "Software",
+    "mobile": "Móvil",
+    "yes": "Optimizado",
+    "no": "No"
+  },
+  "compare": {
+    "before": "Antes",
+    "after": "Después"
+  },
+  "roblox": {
+    "live": "En vivo en Roblox",
+    "playing": "Jugando",
+    "visits": "Visitas",
+    "favorites": "Favoritos",
+    "play": "Jugar"
+  },
+  "about": {
+    "kicker": "sobre mí",
+    "title": "Sobre mí",
+    "whatIDo": "Lo que hago",
+    "location": "Ubicación",
+    "status": "Estado",
+    "available": "Disponible para proyectos",
+    "unavailable": "Agenda llena por ahora"
+  },
+  "footer": {
+    "kicker": "contacto",
+    "title": "¿Tienes un proyecto en mente?",
+    "text": "Escríbeme por cualquiera de estos medios y lo platicamos.",
+    "soon": "Los enlaces de contacto llegan muy pronto.",
+    "copy": "Copiar",
+    "copied": "Copiado"
+  },
+  "notFound": {
+    "title": "404 — Esta parte del mapa no existe",
+    "text": "La página que buscas no está aquí o fue movida.",
+    "back": "Volver al inicio"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "Ath — Roblox 3D Modeler, Builder and Scripter",
+    "description": "Portfolio of Ath (@HolandaMexico): 3D modeling, building and Luau scripting for Roblox experiences."
+  },
+  "nav": {
+    "modeling": "modeling",
+    "building": "building",
+    "scripting": "scripting",
+    "about": "about",
+    "contact": "contact",
+    "switchLocale": "ES",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Building in Roblox Studio",
+    "available": "Available for projects",
+    "hello": "Hi, I'm",
+    "roles": ["3D Modeler", "Builder", "Luau Scripter"],
+    "intro": "I create models, maps and systems for Roblox experiences: optimized, clean and ready to play.",
+    "ctaPrimary": "See my work",
+    "ctaSecondary": "Get in touch",
+    "outputLabel": "Output",
+    "facts": [
+      { "label": "modeling", "value": "Blender" },
+      { "label": "building", "value": "Roblox Studio" },
+      { "label": "language", "value": "Luau" }
+    ]
+  },
+  "areas": {
+    "kicker": "what I do",
+    "title": "Areas of work",
+    "subtitle": "Three disciplines that combine to take an idea from sketch to playable experience.",
+    "explore": "See projects",
+    "projects": "projects",
+    "items": {
+      "modeling": {
+        "title": "3D Modeling",
+        "description": "Optimized low-poly models in Blender, with clean topology and lightweight textures for mobile.",
+        "tags": ["Blender", "Low-poly", "UV / Textures"]
+      },
+      "building": {
+        "title": "Building",
+        "description": "Maps and scenes built in Roblox Studio, designed around player flow and performance.",
+        "tags": ["Roblox Studio", "Maps", "Lighting"]
+      },
+      "scripting": {
+        "title": "Scripting",
+        "description": "Game systems in Luau with modular, typed code split between server and client.",
+        "tags": ["Luau", "ModuleScripts", "Client / Server"]
+      }
+    }
+  },
+  "featured": {
+    "kicker": "featured",
+    "title": "Featured projects",
+    "subtitle": "A selection of my most recent work."
+  },
+  "stack": {
+    "kicker": "tools",
+    "title": "Stack",
+    "subtitle": "The software I work with every day."
+  },
+  "process": {
+    "kicker": "how I work",
+    "title": "Process",
+    "subtitle": "A clear workflow, from the first block to release.",
+    "steps": [
+      { "title": "References", "description": "I define the style, scale and what the project needs." },
+      { "title": "Blockout", "description": "Basic shapes to validate proportions and player flow." },
+      { "title": "Modeling", "description": "Detail in Blender while keeping the polycount in check." },
+      { "title": "Integration", "description": "I import into Studio, assemble the map and wire up scripts." },
+      { "title": "Testing", "description": "I check performance and bugs before delivery." }
+    ]
+  },
+  "listing": {
+    "kicker": "projects",
+    "empty": "No projects here yet. Coming soon!",
+    "subtitles": {
+      "modeling": "3D models made in Blender. Open any of them to spin it in 3D and see its specs.",
+      "building": "Maps and scenes built in Roblox Studio.",
+      "scripting": "Luau systems with the full source, highlighted like in Studio."
+    }
+  },
+  "project": {
+    "back": "Back",
+    "description": "description",
+    "gallery": "gallery",
+    "code": "code",
+    "video": "video",
+    "model": "3d model",
+    "compare": "before / after",
+    "experience": "experience",
+    "repo": "View repository",
+    "openExperience": "Open experience",
+    "close": "Close"
+  },
+  "explorer": {
+    "explorer": "Explorer",
+    "copy": "Copy",
+    "copied": "Copied",
+    "lines": "lines"
+  },
+  "viewer": {
+    "title": "3D Viewer",
+    "wireframe": "Wireframe",
+    "rotate": "Rotate",
+    "reset": "Re-center",
+    "hint": "Drag to orbit · scroll to zoom · right-click to pan",
+    "properties": "Properties",
+    "triangles": "Triangles",
+    "vertices": "Vertices",
+    "meshes": "Meshes",
+    "materials": "Materials",
+    "textures": "Textures",
+    "software": "Software",
+    "mobile": "Mobile",
+    "yes": "Optimized",
+    "no": "No"
+  },
+  "compare": {
+    "before": "Before",
+    "after": "After"
+  },
+  "roblox": {
+    "live": "Live on Roblox",
+    "playing": "Playing",
+    "visits": "Visits",
+    "favorites": "Favorites",
+    "play": "Play"
+  },
+  "about": {
+    "kicker": "about me",
+    "title": "About me",
+    "whatIDo": "What I do",
+    "location": "Location",
+    "status": "Status",
+    "available": "Available for projects",
+    "unavailable": "Fully booked for now"
+  },
+  "footer": {
+    "kicker": "contact",
+    "title": "Got a project in mind?",
+    "text": "Reach out through any of these and let's talk.",
+    "soon": "Contact links are coming very soon.",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "notFound": {
+    "title": "404 — This part of the map doesn't exist",
+    "text": "The page you're looking for isn't here or has moved.",
+    "back": "Back to home"
+  }
+}

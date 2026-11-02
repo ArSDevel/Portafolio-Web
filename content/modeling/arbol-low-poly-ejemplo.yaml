@@ -1,0 +1,32 @@
+title: Árbol low-poly (Ejemplo)
+titleEn: Low-poly tree (Example)
+summary:
+  es: Árbol estilizado de 54 triángulos para mapas de móvil.
+  en: Stylized 54-triangle tree for mobile maps.
+description:
+  es: |-
+    Proyecto de ejemplo para probar el portafolio. Reemplázalo o bórralo desde el panel.
+
+    Árbol low-poly con sombreado plano, pensado para repetirse muchas veces en un mapa sin afectar el rendimiento.
+  en: |-
+    Sample project to test the portfolio. Replace or delete it from the panel.
+
+    Flat-shaded low-poly tree, designed to be repeated many times across a map without hurting performance.
+cover: /content/modeling/arbol-low-poly-ejemplo/cover.svg
+gallery:
+  - image: /content/modeling/arbol-low-poly-ejemplo/gallery/0/image.svg
+    caption:
+      es: Vista lateral
+      en: Side view
+tags:
+  - Low-poly
+  - Blender
+  - Naturaleza
+date: 2026-10-20
+featured: true
+model: /content/modeling/arbol-low-poly-ejemplo/model.glb
+textures: Sin texturas · 4 materiales
+software: Blender
+mobileOptimized: true
+before: /content/modeling/arbol-low-poly-ejemplo/before.svg
+after: /content/modeling/arbol-low-poly-ejemplo/after.svg
