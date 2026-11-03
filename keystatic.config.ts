@@ -2,18 +2,17 @@ import { collection, config, fields, singleton } from "@keystatic/core";
 
 /*
  * Content model for the portfolio.
- * Local mode while developing; GitHub mode in production once
- * NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO ("owner/repo") is set, so only
- * accounts with write access to the repo can save changes.
+ * GitHub mode whenever NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO ("owner/repo") is set
+ * (on Vercel, or locally to run Keystatic's GitHub App setup), so only accounts
+ * with write access to the repo can save changes. Without it: local files.
  */
 const repo = process.env.NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO as
   | `${string}/${string}`
   | undefined;
 
-const storage =
-  process.env.NODE_ENV === "production" && repo
-    ? ({ kind: "github", repo } as const)
-    : ({ kind: "local" } as const);
+const storage = repo
+  ? ({ kind: "github", repo } as const)
+  : ({ kind: "local" } as const);
 
 const localized = (label: string, multiline = false) =>
   fields.object(
