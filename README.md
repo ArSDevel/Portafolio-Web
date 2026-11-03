@@ -39,12 +39,12 @@ Marca **Destacado** para que el proyecto aparezca en la página de inicio.
 
 ### 3.1 Subir el código a GitHub
 1. Crea una cuenta en GitHub y **activa la verificación en dos pasos**.
-2. Crea un repositorio nuevo (puede ser privado), por ejemplo `HolandaMexico/portfolio`.
+2. Crea un repositorio nuevo (puede ser privado), en este proyecto: `ArSDevel/Portafolio-Web`.
 3. Sube el proyecto:
    ```bash
    git add .
    git commit -m "Primera versión del portafolio"
-   git remote add origin https://github.com/HolandaMexico/portfolio.git
+   git remote add origin https://github.com/ArSDevel/Portafolio-Web.git
    git push -u origin main
    ```
 
@@ -58,7 +58,7 @@ En producción el panel usa **GitHub** para iniciar sesión: solo las cuentas co
 
 1. En tu PC crea un archivo `.env.local` con:
    ```
-   NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO=HolandaMexico/portfolio
+   NEXT_PUBLIC_KEYSTATIC_GITHUB_REPO=ArSDevel/Portafolio-Web
    ```
 2. Ejecuta `npm run build` y luego `npm start`, y abre <http://localhost:3000/keystatic>.
 3. Keystatic te guiará para **crear una GitHub App**. Al terminar, escribe en un archivo `.env` las variables `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`, `KEYSTATIC_SECRET` y `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG`.
